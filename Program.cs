@@ -6,7 +6,17 @@ namespace DZ4Seminar1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Введите число: ");
+            string first = Console.ReadLine();
+            int number = int.Parse(first);
+            int i = 0;
+            Console.WriteLine("Последовательность четных чисел: ");
+            while (i<number-1)
+            {
+                i+=2;
+                Console.WriteLine(i);
+            }
         }
+
     }
 }
